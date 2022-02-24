@@ -14,4 +14,5 @@ export const errorHandler = (err:Error,req:Request,res:Response,next:NextFunctio
         message:'Somenthing went wrong'
        }]
     })
+
 }
