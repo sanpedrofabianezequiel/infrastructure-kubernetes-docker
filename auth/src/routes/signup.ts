@@ -3,10 +3,8 @@ import { body,validationResult } from 'express-validator';
 import { DatabaseConnectionError } from '../errors/database-connection-error';
 import { RequestValidationError } from '../errors/request-validation-error';
 import { User } from '../models/user';
-import { BadRequestError } from '../errors/bad-request-error';
 import jwt from 'jsonwebtoken';
-import {validateRequest}from '../middlewares/validate-request';
-
+import { validateRequest,BadRequestError } from '@microserviceticketing/common';
 
 const router = express.Router();
 
